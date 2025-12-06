@@ -3,7 +3,7 @@ import { IconMapPin, IconUsers, IconCheckCircle, IconBox, IconStore } from './Ic
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-br from-brand-600 via-brand-700 to-brand-900">
+    <section id="hero" className="relative pt-24 sm:pt-32 pb-16 sm:pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-br from-brand-600 via-brand-700 to-brand-900">
       
       {/* Background patterns */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
@@ -20,37 +20,37 @@ const Hero: React.FC = () => {
               海外华人首选转运拼团平台
             </div>
             
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent animate-gradient">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent animate-gradient break-keep">
               就近拼团，智能发货
             </h1>
             
-            <p className="text-lg lg:text-xl text-brand-100 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg lg:text-xl text-brand-100 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
               Pindo 拼岛 连接有转运需求的海外华人与优质转运公司。通过地理位置智能撮合，告别繁琐的微信接龙，让拼团更高效、更省心。
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <a href="#download" className="w-full sm:w-auto px-8 py-4 bg-white text-brand-700 rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:bg-brand-50 transition-all flex items-center justify-center gap-2">
-                <IconUsers className="w-5 h-5" />
-                我是用户，要去拼团
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center lg:justify-start">
+              <a href="#download" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-brand-700 rounded-xl font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:bg-brand-50 transition-all flex items-center justify-center gap-2">
+                <IconUsers className="w-5 h-5 flex-shrink-0" />
+                <span className="whitespace-nowrap">我是用户，要去拼团</span>
               </a>
-              <a href="#features-merchant" className="w-full sm:w-auto px-8 py-4 bg-brand-800/50 border border-white/20 text-white rounded-xl font-bold text-lg hover:bg-brand-800/70 backdrop-blur-md transition-all flex items-center justify-center gap-2">
-                <IconStore className="w-5 h-5" />
-                我是商家，想要入驻
+              <a href="#features-merchant" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-brand-800/50 border border-white/20 text-white rounded-xl font-bold text-base sm:text-lg hover:bg-brand-800/70 backdrop-blur-md transition-all flex items-center justify-center gap-2">
+                <IconStore className="w-5 h-5 flex-shrink-0" />
+                <span className="whitespace-nowrap">我是商家，想要入驻</span>
               </a>
             </div>
             
-            <div className="mt-10 flex items-center justify-center lg:justify-start gap-8 text-brand-200 text-sm font-medium">
+            <div className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-8 text-brand-200 text-xs sm:text-sm font-medium">
               <div className="flex items-center gap-2">
-                <IconCheckCircle className="w-4 h-4 text-white" />
-                <span>智能定位推荐</span>
+                <IconCheckCircle className="w-4 h-4 text-white flex-shrink-0" />
+                <span className="whitespace-nowrap">智能定位推荐</span>
               </div>
               <div className="flex items-center gap-2">
-                <IconCheckCircle className="w-4 h-4 text-white" />
-                <span>实时进度追踪</span>
+                <IconCheckCircle className="w-4 h-4 text-white flex-shrink-0" />
+                <span className="whitespace-nowrap">实时进度追踪</span>
               </div>
               <div className="flex items-center gap-2">
-                <IconCheckCircle className="w-4 h-4 text-white" />
-                <span>透明价格体系</span>
+                <IconCheckCircle className="w-4 h-4 text-white flex-shrink-0" />
+                <span className="whitespace-nowrap">透明价格体系</span>
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ const Header: React.FC = () => {
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-4 md:py-5'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             alt="Pindo Logo" 
             className="w-10 h-10 rounded-lg group-hover:opacity-90 transition-opacity"
           />
-          <span className={`font-bold text-2xl tracking-tight ${isScrolled ? 'text-slate-900' : 'text-slate-900 md:text-white'}`}>
+          <span className={`font-bold text-2xl tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
             Pindo 拼岛
           </span>
         </a>
@@ -97,13 +97,13 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden p-2 text-slate-600"
+          className="md:hidden p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
-            <IconX className={isScrolled ? "text-slate-900" : "text-slate-900 md:text-white"} />
+            <IconX className={isScrolled ? "text-slate-900" : "text-white"} />
           ) : (
-            <IconMenu className={isScrolled ? "text-slate-900" : "text-slate-900 md:text-white"} />
+            <IconMenu className={isScrolled ? "text-slate-900" : "text-white"} />
           )}
         </button>
       </div>

@@ -30,7 +30,7 @@ const UserFeatures: React.FC = () => {
   ];
 
   return (
-    <section id="features-user" className="py-20 bg-slate-50">
+    <section id="features-user" className="py-16 sm:py-20 bg-slate-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <span className="text-brand-600 font-bold tracking-wider uppercase text-sm">User Features</span>
@@ -39,13 +39,13 @@ const UserFeatures: React.FC = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {features.map((f, idx) => (
-            <div key={idx} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className={`w-14 h-14 rounded-xl ${f.color} flex items-center justify-center mb-6 shadow-lg`}>
+            <div key={idx} className="bg-white rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl ${f.color} flex items-center justify-center mb-4 sm:mb-6 shadow-lg`}>
                 {f.icon}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">{f.title}</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">{f.title}</h3>
               <p className="text-slate-600 leading-relaxed text-sm">
                 {f.desc}
               </p>

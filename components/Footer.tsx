@@ -4,17 +4,17 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
-          <div className="col-span-1 md:col-span-1">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12">
+          <div className="col-span-1 sm:col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4 text-white">
               <img 
                 src={`${import.meta.env.BASE_URL}assets/logo.png`}
                 alt="Pindo Logo" 
                 className="w-8 h-8 rounded-lg"
               />
-              <span className="font-bold text-xl">Pindo 拼岛</span>
+              <span className="font-bold text-lg sm:text-xl">Pindo 拼岛</span>
             </div>
-            <p className="text-sm">
+            <p className="text-sm leading-relaxed">
               连接海外华人与转运公司，<br />让拼团更简单，让物流更高效。
             </p>
           </div>
