@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-4 text-white">
               <img 
-                src="/assets/logo.png" 
+                src={`${import.meta.env.BASE_URL}assets/logo.png`}
                 alt="Pindo Logo" 
                 className="w-8 h-8 rounded-lg"
               />

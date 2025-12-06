@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
                   <div className="flex-1 bg-slate-200 relative overflow-hidden">
                     {/* Find Group Image */}
                     <img 
-                      src="/assets/find group.png" 
+                      src={`${import.meta.env.BASE_URL}assets/find group.png`}
                       alt="Find Group Map" 
                       className="w-full h-full object-cover"
                     />

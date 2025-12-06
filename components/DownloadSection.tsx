@@ -19,7 +19,7 @@ const DownloadSection: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
             <a href="#" className="hover:opacity-90 transition-opacity">
               <img 
-                src="/assets/applestore.png" 
+                src={`${import.meta.env.BASE_URL}assets/applestore.png`}
                 alt="Download on the App Store" 
                 className="h-14 w-auto"
               />
@@ -27,7 +27,7 @@ const DownloadSection: React.FC = () => {
 
             <a href="#" className="hover:opacity-90 transition-opacity">
               <img 
-                src="/assets/googleplay.png" 
+                src={`${import.meta.env.BASE_URL}assets/googleplay.png`}
                 alt="Get it on Google Play" 
                 className="h-14 w-auto"
               />

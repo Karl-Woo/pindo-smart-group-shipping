@@ -31,7 +31,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2 group">
           <img 
-            src="/assets/logo.png" 
+            src={`${import.meta.env.BASE_URL}assets/logo.png`}
             alt="Pindo Logo" 
             className="w-10 h-10 rounded-lg group-hover:opacity-90 transition-opacity"
           />
