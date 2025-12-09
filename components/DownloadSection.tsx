@@ -9,11 +9,11 @@ const DownloadSection: React.FC = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-6">
-            准备好体验高效拼团了吗？
+            准备好一起"上岛"了吗？
           </h2>
           <p className="text-brand-100 text-base sm:text-lg md:text-xl mb-10 leading-relaxed">
-            立即下载 Pindo 拼岛 App，加入您身边的转运社区。<br />
-            新用户注册即送 10元 运费抵扣券！
+            立即下载拼岛App，加入您身边的转运社区。<br />
+            新用户注册即送10元运费抵扣券！
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6">

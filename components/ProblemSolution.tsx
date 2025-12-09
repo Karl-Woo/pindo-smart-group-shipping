@@ -7,11 +7,8 @@ const ProblemSolution: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            为什么选择 Pindo 拼岛？
+            为什么选择拼岛？
           </h2>
-          <p className="text-lg text-slate-600">
-            解决传统拼团的“等待长、流程乱、信任难”，为您带来全新的转运体验。
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
@@ -22,28 +19,35 @@ const ProblemSolution: React.FC = () => {
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-6 flex flex-wrap items-center gap-2">
               <span className="bg-slate-200 text-slate-600 p-2 rounded-lg text-sm whitespace-nowrap">传统方式</span>
-              <span className="break-keep">微信群接龙</span>
+              <span className="break-keep">微信群拼团</span>
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <IconX className="w-5 h-5 text-slate-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <strong className="block text-slate-900">信息混乱响应慢</strong>
-                  <p className="text-sm text-slate-500">手动爬楼看消息，团长回复不及时，容易漏单。</p>
+                  <p className="text-sm text-slate-500">手动爬楼看消息，团长回复不及时，容易错过拼团。</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <IconX className="w-5 h-5 text-slate-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <strong className="block text-slate-900">拼团周期不确定</strong>
-                  <p className="text-sm text-slate-500">不知道何时拼满，货物积压时间长，心理负担大。</p>
+                  <p className="text-sm text-slate-500">不知道什么时候拼满，货物积压时间长，心理负担大。</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <IconX className="w-5 h-5 text-slate-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <strong className="block text-slate-900">地址备注易出错</strong>
-                  <p className="text-sm text-slate-500">手动复制粘贴地址，格式不统一，导致寄错丢件。</p>
+                  <p className="text-sm text-slate-500">手动填写地址易错漏信息，进而导致丢件漏件。</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <IconX className="w-5 h-5 text-slate-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <strong className="block text-slate-900">计费规则不透明</strong>
+                  <p className="text-sm text-slate-500">商家说运费多少就是多少，无法核验、没有保障。</p>
                 </div>
               </li>
             </ul>
@@ -55,29 +59,36 @@ const ProblemSolution: React.FC = () => {
               <IconCheckCircle className="w-32 h-32 text-brand-400 group-hover:text-brand-600 transition-colors" />
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-brand-900 mb-6 flex flex-wrap items-center gap-2">
-              <span className="bg-brand-200 text-brand-800 p-2 rounded-lg text-sm whitespace-nowrap">Pindo 拼岛 模式</span>
-              <span className="break-keep">智能平台化</span>
+              <span className="bg-brand-200 text-brand-800 p-2 rounded-lg text-sm whitespace-nowrap">拼岛模式</span>
+              <span className="break-keep">智能化平台体验</span>
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <IconCheckCircle className="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" />
                 <div>
-                  <strong className="block text-brand-900">地理位置智能推荐</strong>
-                  <p className="text-sm text-brand-700">基于常驻地址，自动推荐周边最近、最快拼团。</p>
+                  <strong className="block text-brand-900">就近推荐适合的拼团</strong>
+                  <p className="text-sm text-brand-700">基于你的地址，自动推荐周边最近、最快的拼团。</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <IconCheckCircle className="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" />
                 <div>
-                  <strong className="block text-brand-900">实时进度透明化</strong>
-                  <p className="text-sm text-brand-700">App推送关键节点（50%, 80%, 截单），心中有数。</p>
+                  <strong className="block text-brand-900">进度与节点全程透明</strong>
+                  <p className="text-sm text-brand-700">App实时推送拼团关键节点（截单、发货、送达），随时掌握进度。</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <IconCheckCircle className="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" />
                 <div>
-                  <strong className="block text-brand-900">一键生成专属标签</strong>
-                  <p className="text-sm text-brand-700">自动生成包含团ID的唯一地址标签，扫码即入库。</p>
+                  <strong className="block text-brand-900">一键生成专属地址标签</strong>
+                  <p className="text-sm text-brand-700">一键复制含团标签的专属地址，轻松下单，三重校验确保包裹被精准识别。</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <IconCheckCircle className="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" />
+                <div>
+                  <strong className="block text-brand-900">计费标准统一透明</strong>
+                  <p className="text-sm text-brand-700">平台规范计费方式，净重、体积重、分摊重量清晰展示，杜绝隐形收费。</p>
                 </div>
               </li>
             </ul>

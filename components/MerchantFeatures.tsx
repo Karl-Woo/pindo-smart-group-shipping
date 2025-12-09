@@ -16,7 +16,7 @@ const MerchantFeatures: React.FC = () => {
               让商家“轻运营、高转化”
             </h2>
             <p className="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed">
-              Pindo 拼岛 为转运公司提供全套数字化解决方案。从获客到结算，解决传统模式下的人脉依赖、库存积压和管理混乱问题。
+              拼岛为转运公司提供完整的拼团数字化解决方案。从获客、拼团管理到结算，全面解决传统模式下的人脉依赖、库存积压与管理混乱问题。
             </p>
 
             <div className="space-y-8">
@@ -27,7 +27,7 @@ const MerchantFeatures: React.FC = () => {
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold text-white mb-2">地理位置精准获客</h3>
                   <p className="text-slate-400 text-sm leading-relaxed">
-                    不再单纯依赖团长人脉。通过 LBS 推荐，直接触达转运仓库周边的潜在新用户，打破增长瓶颈。
+                    摆脱对团长人脉的单一依赖。通过基于位置的推荐机制，精准触达团长附近的潜在用户，突破增长瓶颈。
                   </p>
                 </div>
               </div>
@@ -37,9 +37,9 @@ const MerchantFeatures: React.FC = () => {
                   <IconCheckCircle className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2">标准化发货流程</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2">高效管理团批次，持续滚动开团</h3>
                   <p className="text-slate-400 text-sm leading-relaxed">
-                    扫码入库、一键分拣。系统自动关联用户与包裹，支持批量录入重量，自动计算分摊运费。
+                    实时展示拼团进度并自动推送关键节点，支持稳定、高频地滚动发起团批次，显著减少人工沟通与客服成本。
                   </p>
                 </div>
               </div>
@@ -51,7 +51,7 @@ const MerchantFeatures: React.FC = () => {
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold text-white mb-2">智能分账与支付</h3>
                   <p className="text-slate-400 text-sm leading-relaxed">
-                    支持复杂费用计算（基础运费+关税+箱子公摊）。一键拉起用户支付，自动催付，资金流转更高效。
+                    自动拆分净重、体积重、箱子公摊等费用项，支持复杂计费场景。一键拉起支付并自动催付，让资金结算更高效。
                   </p>
                 </div>
               </div>

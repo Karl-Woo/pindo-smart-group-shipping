@@ -21,11 +21,11 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent animate-gradient break-keep">
-              就近拼团，智能发货
+              就近拼团，无忧转运
             </h1>
             
             <p className="text-base sm:text-lg lg:text-xl text-brand-100 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Pindo 拼岛 连接有转运需求的海外华人与优质转运公司。通过地理位置智能撮合，告别繁琐的微信接龙，让拼团更高效、更省心。
+              拼岛让跨境寄件进入"平台时代"。作为连接用户与优质转运公司的第三方平台，拼岛为你智能匹配附近拼团，降低找团与沟通成本，让寄件真正变得轻松透明。上拼岛，就能拼到。
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center lg:justify-start">
@@ -42,15 +42,15 @@ const Hero: React.FC = () => {
             <div className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-8 text-brand-200 text-xs sm:text-sm font-medium">
               <div className="flex items-center gap-2">
                 <IconCheckCircle className="w-4 h-4 text-white flex-shrink-0" />
-                <span className="whitespace-nowrap">智能定位推荐</span>
+                <span className="whitespace-nowrap">智能匹配附近拼团</span>
               </div>
               <div className="flex items-center gap-2">
                 <IconCheckCircle className="w-4 h-4 text-white flex-shrink-0" />
-                <span className="whitespace-nowrap">实时进度追踪</span>
+                <span className="whitespace-nowrap">进度与运费全程透明</span>
               </div>
               <div className="flex items-center gap-2">
                 <IconCheckCircle className="w-4 h-4 text-white flex-shrink-0" />
-                <span className="whitespace-nowrap">透明价格体系</span>
+                <span className="whitespace-nowrap">严选优质转运合作方</span>
               </div>
             </div>
           </div>
@@ -82,39 +82,42 @@ const Hero: React.FC = () => {
                </div>
             </div>
             
-            {/* Floating Elements */}
-            <div className="hidden lg:block absolute top-56 left-0 bg-white p-4 rounded-xl shadow-xl border border-slate-50 animate-float" style={{ animationDuration: '3s', animationDelay: '0s' }}>
+            {/* Floating Elements - Hidden on mobile, positioned to cover phone border on larger screens */}
+            {/* Card 1: Top Left */}
+            <div className="hidden md:block absolute top-[25%] lg:top-[30%] -left-2 md:-left-3 lg:-left-4 bg-white p-4 rounded-xl shadow-xl border border-slate-50 animate-float z-20" style={{ animationDuration: '3s', animationDelay: '0s' }}>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 flex-shrink-0">
                   <IconCheckCircle className="w-5 h-5" />
                 </div>
-                <div>
-                  <p className="text-xs text-slate-500">您的包裹</p>
-                  <p className="text-sm font-bold text-slate-800">已入库</p>
+                <div className="min-w-0">
+                  <p className="text-xs text-slate-500 whitespace-nowrap">您的包裹</p>
+                  <p className="text-sm font-bold text-slate-800 whitespace-nowrap">已入库</p>
                 </div>
               </div>
             </div>
 
-            <div className="hidden lg:block absolute bottom-64 left-8 bg-white p-4 rounded-xl shadow-xl border border-slate-50 animate-float" style={{ animationDuration: '3.5s', animationDelay: '1s' }}>
+            {/* Card 2: Bottom Left */}
+            <div className="hidden md:block absolute bottom-[20%] lg:bottom-[25%] -left-2 md:-left-3 lg:-left-4 bg-white p-4 rounded-xl shadow-xl border border-slate-50 animate-float z-20" style={{ animationDuration: '3.5s', animationDelay: '1s' }}>
               <div className="flex items-center gap-3">
-                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600">
+                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 flex-shrink-0">
                   <IconMapPin className="w-5 h-5" />
                 </div>
-                <div>
-                  <p className="text-xs text-slate-500">周边发现</p>
-                  <p className="text-sm font-bold text-slate-800">3个新团开启</p>
+                <div className="min-w-0">
+                  <p className="text-xs text-slate-500 whitespace-nowrap">周边发现</p>
+                  <p className="text-sm font-bold text-slate-800 whitespace-nowrap">3个新团开启</p>
                 </div>
               </div>
             </div>
 
-            <div className="hidden lg:block absolute top-1/3 -right-8 bg-white p-4 rounded-xl shadow-xl border border-slate-50 animate-float" style={{ animationDuration: '3.2s', animationDelay: '0.5s' }}>
+            {/* Card 3: Top Right */}
+            <div className="hidden md:block absolute top-[40%] lg:top-[45%] -right-2 md:-right-3 lg:-right-4 bg-white p-4 rounded-xl shadow-xl border border-slate-50 animate-float z-20" style={{ animationDuration: '3.2s', animationDelay: '0.5s' }}>
               <div className="flex items-center gap-3">
-                 <div className="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center text-brand-600">
+                 <div className="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 flex-shrink-0">
                   <IconBox className="w-5 h-5" />
                 </div>
-                <div>
-                  <p className="text-xs text-slate-500">你收藏的团</p>
-                  <p className="text-sm font-bold text-slate-800">拼团进度已到90%</p>
+                <div className="min-w-0">
+                  <p className="text-xs text-slate-500 whitespace-nowrap">你关注的团</p>
+                  <p className="text-sm font-bold text-slate-800 whitespace-nowrap">拼团进度已到90%</p>
                 </div>
               </div>
             </div>
