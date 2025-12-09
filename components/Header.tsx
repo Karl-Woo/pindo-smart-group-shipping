@@ -3,8 +3,7 @@ import { IconMenu, IconX } from './Icons';
 import { NavItem } from '../types';
 
 const navItems: NavItem[] = [
-  { label: '首页', href: '#hero' },
-  { label: '为什么选择我们', href: '#problems' },
+  { label: '为什么选择拼岛？', href: '#problems' },
   { label: '用户功能', href: '#features-user' },
   { label: '商家入驻', href: '#features-merchant' },
 ];
@@ -34,6 +33,7 @@ const Header: React.FC = () => {
             src={`${import.meta.env.BASE_URL}assets/logo.png`}
             alt="Pindo Logo" 
             className="w-10 h-10 rounded-lg group-hover:opacity-90 transition-opacity"
+            loading="eager"
           />
           <span className={`font-bold text-2xl tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
             Pindo 拼岛

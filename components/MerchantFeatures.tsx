@@ -12,8 +12,8 @@ const MerchantFeatures: React.FC = () => {
           
           <div className="flex-1">
             <span className="text-accent-500 font-bold tracking-wider uppercase text-sm">For Merchants</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
-              让商家“轻运营、高转化”
+            <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold mt-2 mb-6">
+              让商家"轻运营、高转化"
             </h2>
             <p className="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed">
               拼岛为转运公司提供完整的拼团数字化解决方案。从获客、拼团管理到结算，全面解决传统模式下的人脉依赖、库存积压与管理混乱问题。
@@ -25,8 +25,8 @@ const MerchantFeatures: React.FC = () => {
                   <IconUsers className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2">地理位置精准获客</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-2">地理位置精准获客</h3>
+                  <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
                     摆脱对团长人脉的单一依赖。通过基于位置的推荐机制，精准触达团长附近的潜在用户，突破增长瓶颈。
                   </p>
                 </div>

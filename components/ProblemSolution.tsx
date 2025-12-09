@@ -5,8 +5,8 @@ const ProblemSolution: React.FC = () => {
   return (
     <section id="problems" className="py-16 sm:py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4">
             为什么选择拼岛？
           </h2>
         </div>
@@ -25,8 +25,8 @@ const ProblemSolution: React.FC = () => {
               <li className="flex items-start gap-3">
                 <IconX className="w-5 h-5 text-slate-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <strong className="block text-slate-900">信息混乱响应慢</strong>
-                  <p className="text-sm text-slate-500">手动爬楼看消息，团长回复不及时，容易错过拼团。</p>
+                  <strong className="block text-base sm:text-lg text-slate-900 mb-1">信息混乱响应慢</strong>
+                  <p className="text-sm sm:text-base text-slate-500">手动爬楼看消息，团长回复不及时，容易错过拼团。</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -66,8 +66,8 @@ const ProblemSolution: React.FC = () => {
               <li className="flex items-start gap-3">
                 <IconCheckCircle className="w-5 h-5 text-brand-600 mt-0.5 flex-shrink-0" />
                 <div>
-                  <strong className="block text-brand-900">就近推荐适合的拼团</strong>
-                  <p className="text-sm text-brand-700">基于你的地址，自动推荐周边最近、最快的拼团。</p>
+                  <strong className="block text-base sm:text-lg text-brand-900 mb-1">就近推荐适合的拼团</strong>
+                  <p className="text-sm sm:text-base text-brand-700">基于你的地址，自动推荐周边最近、最快的拼团。</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">

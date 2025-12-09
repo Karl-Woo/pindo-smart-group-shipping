@@ -32,15 +32,15 @@ const UserFeatures: React.FC = () => {
   return (
     <section id="features-user" className="py-16 sm:py-20 bg-slate-50">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-2">
             拼岛，让拼团更简单
           </h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {features.map((f, idx) => (
-            <div key={idx} className="bg-white rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative overflow-hidden group">
+            <div key={idx} className="bg-white rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-xl transition-all duration-300 lg:hover:-translate-y-1 relative overflow-hidden group">
               {/* Gentle gradient red overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-red-50/30 via-red-50/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
               
@@ -48,8 +48,8 @@ const UserFeatures: React.FC = () => {
                 <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl ${f.color} flex items-center justify-center mb-4 sm:mb-6 shadow-lg`}>
                   {f.icon}
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">{f.title}</h3>
-                <p className="text-slate-600 leading-relaxed text-sm">
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-2 sm:mb-3">{f.title}</h3>
+                <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   {f.desc}
                 </p>
               </div>

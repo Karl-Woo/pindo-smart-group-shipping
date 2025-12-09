@@ -12,7 +12,7 @@ const HowItWorks: React.FC = () => {
     <section className="py-16 sm:py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">简单四步，完成拼团寄件</h2>
+          <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-slate-900">简单四步，完成拼团寄件</h2>
         </div>
 
         <div className="relative grid sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
@@ -24,7 +24,7 @@ const HowItWorks: React.FC = () => {
               <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto bg-white border-4 border-brand-100 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:border-brand-500 transition-colors shadow-sm">
                 <span className="text-2xl sm:text-3xl font-black text-brand-600">{step.num}</span>
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors duration-300">{step.title}</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-2 group-hover:text-brand-600 transition-colors duration-300">{step.title}</h3>
               <p className="text-sm sm:text-base text-slate-500 px-2 sm:px-4 leading-relaxed group-hover:text-slate-700 transition-colors duration-300">{step.desc}</p>
             </div>
           ))}

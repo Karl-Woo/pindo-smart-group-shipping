@@ -7,28 +7,36 @@ const Hero: React.FC = () => {
       
       {/* Background patterns */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
-        <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl opacity-20"></div>
+        <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse will-change-transform"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl opacity-20 will-change-transform"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 text-center lg:text-left">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-20">
           
           {/* Text Content */}
-          <div className="flex-1 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white/90 text-sm font-medium mb-6 backdrop-blur-sm">
+          <div className="flex-1 max-w-2xl w-full text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white/90 text-sm font-medium mb-4 sm:mb-6 backdrop-blur-sm">
               海外华人首选转运拼团平台
             </div>
             
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent animate-gradient break-keep">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 bg-clip-text text-transparent animate-gradient break-keep">
               就近拼团，无忧转运
             </h1>
             
-            <p className="text-base sm:text-lg lg:text-xl text-brand-100 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              拼岛让跨境寄件进入"平台时代"。作为连接用户与优质转运公司的第三方平台，拼岛为你智能匹配附近拼团，降低找团与沟通成本，让寄件真正变得轻松透明。上拼岛，就能拼到。
-            </p>
+            <div className="text-base sm:text-lg lg:text-xl text-brand-100 mb-6 sm:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 lg:max-w-lg space-y-2 sm:space-y-3">
+              <p>
+                拼岛让跨境寄件进入"平台时代"。
+              </p>
+              <p>
+                作为连接用户与优质转运公司的第三方平台，拼岛为你智能匹配附近拼团，降低找团与沟通成本，让寄件真正变得轻松透明。
+              </p>
+              <p>
+                上拼岛，就能拼到。
+              </p>
+            </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center lg:justify-start mb-8 sm:mb-10">
               <a href="#download" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-brand-700 rounded-xl font-bold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:bg-brand-50 transition-all flex items-center justify-center gap-2">
                 <IconUsers className="w-5 h-5 flex-shrink-0" />
                 <span className="whitespace-nowrap">我是用户，要去拼团</span>
@@ -39,7 +47,7 @@ const Hero: React.FC = () => {
               </a>
             </div>
             
-            <div className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-8 text-brand-200 text-xs sm:text-sm font-medium">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 lg:gap-8 text-brand-200 text-xs sm:text-sm font-medium">
               <div className="flex items-center gap-2">
                 <IconCheckCircle className="w-4 h-4 text-white flex-shrink-0" />
                 <span className="whitespace-nowrap">智能匹配附近拼团</span>
@@ -56,8 +64,8 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Hero Visual - Mobile App Mockup */}
-          <div className="flex-1 w-full relative group">
-            <div className="relative mx-auto w-full max-w-[320px] lg:max-w-[380px] aspect-[9/19] bg-slate-900 rounded-[3rem] shadow-2xl border-8 border-slate-800 overflow-hidden transform group-hover:-translate-y-2 transition-transform duration-500">
+          <div className="flex-1 w-full relative group mt-8 lg:mt-0">
+            <div className="relative mx-auto w-full max-w-[320px] lg:max-w-[380px] aspect-[9/19] bg-slate-900 rounded-[3rem] shadow-2xl border-8 border-slate-800 overflow-hidden transform lg:group-hover:-translate-y-2 transition-transform duration-500 will-change-transform">
                {/* Mock App UI */}
                <div className="absolute top-0 left-0 w-full h-full bg-white flex flex-col">
                   
@@ -68,6 +76,7 @@ const Hero: React.FC = () => {
                       src={`${import.meta.env.BASE_URL}assets/find group.png`}
                       alt="Find Group Map" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                     
                     {/* Animated Blue Location Indicator */}

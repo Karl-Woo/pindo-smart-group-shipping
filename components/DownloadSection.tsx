@@ -8,7 +8,7 @@ const DownloadSection: React.FC = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
             准备好一起"上岛"了吗？
           </h2>
           <p className="text-brand-100 text-base sm:text-lg md:text-xl mb-10 leading-relaxed">
@@ -22,6 +22,7 @@ const DownloadSection: React.FC = () => {
                 src={`${import.meta.env.BASE_URL}assets/applestore.png`}
                 alt="Download on the App Store" 
                 className="h-14 w-auto"
+                loading="lazy"
               />
             </a>
 
@@ -30,6 +31,7 @@ const DownloadSection: React.FC = () => {
                 src={`${import.meta.env.BASE_URL}assets/googleplay.png`}
                 alt="Get it on Google Play" 
                 className="h-14 w-auto"
+                loading="lazy"
               />
             </a>
           </div>
