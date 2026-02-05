@@ -4,7 +4,7 @@ import { IconMapPin, IconUsers, IconCheckCircle, IconBox, IconStore } from './Ic
 const Hero: React.FC = () => {
   return (
     <section id="hero" className="relative pt-24 sm:pt-32 pb-16 sm:pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-br from-brand-600 via-brand-700 to-brand-900">
-      
+
       {/* Background patterns */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
         <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse will-change-transform"></div>
@@ -13,23 +13,23 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-20">
-          
+
           {/* Text Content */}
           <div className="flex-1 max-w-2xl w-full text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 bg-clip-text text-transparent animate-gradient break-keep">
               拼团转运，就上拼岛
             </h1>
-            
+
             <div className="text-base sm:text-lg lg:text-xl text-brand-100 mb-6 sm:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 lg:max-w-lg space-y-2 sm:space-y-3">
               <p>
                 拼岛让跨境寄件进入"平台时代"。
               </p>
               <p>
-                作为连接用户与优质转运公司的第三方平台，拼岛为你智能匹配附近拼团，降低找团与沟通成本，让寄件真正变得轻松透明。
+                作为连接用户与优质转运公司的第三方平台，<br />
+                拼岛智能匹配附近拼团，<br />
+                让寄件更透明、更省心。
               </p>
-              <p>
-                上拼岛，就能拼到。
-              </p>
+
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center lg:justify-start mb-8 sm:mb-10">
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
                 <span className="whitespace-nowrap">我是商家，想要入驻</span>
               </a>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-6 lg:gap-8 text-brand-200 text-xs sm:text-sm font-medium">
               <div className="flex items-center gap-2">
                 <IconCheckCircle className="w-4 h-4 text-white flex-shrink-0" />
@@ -62,31 +62,31 @@ const Hero: React.FC = () => {
           {/* Hero Visual - Mobile App Mockup */}
           <div className="flex-1 w-full relative group mt-8 lg:mt-0">
             <div className="relative mx-auto w-full max-w-[320px] lg:max-w-[380px] aspect-[9/19] bg-slate-900 rounded-[3rem] shadow-2xl border-8 border-slate-800 overflow-hidden transform lg:group-hover:-translate-y-2 transition-transform duration-500 will-change-transform">
-               {/* Mock App UI */}
-               <div className="absolute top-0 left-0 w-full h-full bg-white flex flex-col">
-                  
-                  {/* Map View - Using Find Group Image */}
-                  <div className="flex-1 bg-slate-200 relative overflow-hidden">
-                    {/* Find Group Image */}
-                    <img 
-                      src={`${import.meta.env.BASE_URL}assets/find group.png`}
-                      alt="Find Group Map" 
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                    
-                    {/* Animated Blue Location Indicator */}
-                    <div className="absolute top-[48%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-10">
-                      <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-xl border-2 border-white">
-                        <div className="w-3 h-3 bg-white rounded-full"></div>
-                      </div>
-                      <div className="absolute inset-0 w-8 h-8 bg-blue-500/30 rounded-full animate-ping"></div>
-                    </div>
-                  </div>
+              {/* Mock App UI */}
+              <div className="absolute top-0 left-0 w-full h-full bg-white flex flex-col">
 
-               </div>
+                {/* Map View - Using Find Group Image */}
+                <div className="flex-1 bg-slate-200 relative overflow-hidden">
+                  {/* Find Group Image */}
+                  <img
+                    src={`${import.meta.env.BASE_URL}assets/find group.png`}
+                    alt="Find Group Map"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+
+                  {/* Animated Blue Location Indicator */}
+                  <div className="absolute top-[48%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-10">
+                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center shadow-xl border-2 border-white">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div className="absolute inset-0 w-8 h-8 bg-blue-500/30 rounded-full animate-ping"></div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            
+
             {/* Floating Elements - Hidden on mobile, positioned to cover phone border on larger screens */}
             {/* Card 1: Top Left */}
             <div className="hidden md:block absolute top-[25%] lg:top-[30%] -left-2 md:-left-3 lg:-left-4 bg-white p-4 rounded-xl shadow-xl border border-slate-50 animate-float z-20" style={{ animationDuration: '3s', animationDelay: '0s' }}>
@@ -104,7 +104,7 @@ const Hero: React.FC = () => {
             {/* Card 2: Bottom Left */}
             <div className="hidden md:block absolute bottom-[20%] lg:bottom-[25%] -left-2 md:-left-3 lg:-left-4 bg-white p-4 rounded-xl shadow-xl border border-slate-50 animate-float z-20" style={{ animationDuration: '3.5s', animationDelay: '1s' }}>
               <div className="flex items-center gap-3">
-                 <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 flex-shrink-0">
+                <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 flex-shrink-0">
                   <IconMapPin className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
             {/* Card 3: Top Right */}
             <div className="hidden md:block absolute top-[40%] lg:top-[45%] -right-2 md:-right-3 lg:-right-4 bg-white p-4 rounded-xl shadow-xl border border-slate-50 animate-float z-20" style={{ animationDuration: '3.2s', animationDelay: '0.5s' }}>
               <div className="flex items-center gap-3">
-                 <div className="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 flex-shrink-0">
+                <div className="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 flex-shrink-0">
                   <IconBox className="w-5 h-5" />
                 </div>
                 <div className="min-w-0">
@@ -131,7 +131,7 @@ const Hero: React.FC = () => {
 
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

@@ -4,8 +4,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12">
-          <div className="col-span-1 sm:col-span-2 md:col-span-1">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-12 mb-12">
+          {/* Logo and Description */}
+          <div className="flex-1 max-w-md">
             <div className="flex items-center gap-2 mb-4 text-white">
               <img
                 src={`${import.meta.env.BASE_URL}assets/logo.png`}
@@ -19,35 +20,26 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          <div>
-            <h4 className="text-white font-bold mb-4">产品</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#features-user" className="hover:text-white transition-colors">用户拼团</a></li>
-              <li><a href="#features-merchant" className="hover:text-white transition-colors">商家入驻</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">价格计算</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-bold mb-4">支持</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">帮助中心</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">隐私政策</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">用户协议</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-bold mb-4">联系我们</h4>
-            <ul className="space-y-2 text-sm">
+          {/* Contact Section */}
+          <div className="flex-1 max-w-md">
+            <h4 className="text-white font-bold mb-4 text-lg">联系我们</h4>
+            <ul className="space-y-3 text-sm">
               <li>
-                <a href="mailto:support@pindo.info" className="hover:text-white transition-colors">
-                  客户服务：support@pindo.info
+                <span className="text-slate-500 mr-2">客户服务：</span>
+                <a
+                  href="mailto:support@pindo.info"
+                  className="text-slate-300 hover:text-white transition-colors underline decoration-slate-600 hover:decoration-slate-400"
+                >
+                  support@pindo.info
                 </a>
               </li>
               <li>
-                <a href="mailto:business@pindo.info" className="hover:text-white transition-colors">
-                  商务合作：business@pindo.info
+                <span className="text-slate-500 mr-2">商务合作：</span>
+                <a
+                  href="mailto:business@pindo.info"
+                  className="text-slate-300 hover:text-white transition-colors underline decoration-slate-600 hover:decoration-slate-400"
+                >
+                  business@pindo.info
                 </a>
               </li>
             </ul>
