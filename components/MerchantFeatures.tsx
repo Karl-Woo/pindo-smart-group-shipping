@@ -58,7 +58,7 @@ const MerchantFeatures: React.FC = () => {
             </div>
             
             <div className="mt-10">
-              <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 bg-accent-600 text-white font-bold rounded-lg hover:bg-accent-700 transition-colors">
+              <a href="mailto:business@pindo.info" className="inline-flex items-center justify-center px-8 py-3 bg-accent-600 text-white font-bold rounded-lg hover:bg-accent-700 transition-colors">
                 申请入驻合作
                 <IconTrendingUp className="ml-2 w-4 h-4" />
               </a>
@@ -97,19 +97,19 @@ const MerchantFeatures: React.FC = () => {
                       <div className="w-1/4 text-right">操作</div>
                     </div>
                     <div className="px-2 sm:px-4 py-3 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-0 text-sm border-b border-slate-100">
-                      <div className="w-full sm:w-1/4 font-medium text-slate-800">JSQ 空运普货</div>
+                      <div className="w-full sm:w-1/4 font-medium text-slate-800">纽约海运</div>
                       <div className="w-full sm:w-1/4"><span className="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs">进行中</span></div>
                       <div className="w-full sm:w-1/4 text-slate-500">85%</div>
                       <div className="w-full sm:w-1/4 sm:text-right text-brand-600 cursor-pointer">管理</div>
                     </div>
                     <div className="px-2 sm:px-4 py-3 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-0 text-sm border-b border-slate-100">
-                      <div className="w-full sm:w-1/4 font-medium text-slate-800">LIC 海运团</div>
+                      <div className="w-full sm:w-1/4 font-medium text-slate-800">洛杉矶空运</div>
                       <div className="w-full sm:w-1/4"><span className="bg-orange-100 text-orange-700 px-2 py-0.5 rounded text-xs">待支付</span></div>
                       <div className="w-full sm:w-1/4 text-slate-500">100%</div>
                       <div className="w-full sm:w-1/4 sm:text-right text-brand-600 cursor-pointer">催付</div>
                     </div>
                     <div className="px-2 sm:px-4 py-3 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-0 text-sm">
-                      <div className="w-full sm:w-1/4 font-medium text-slate-800">曼岛加急</div>
+                      <div className="w-full sm:w-1/4 font-medium text-slate-800">西雅图海运</div>
                       <div className="w-full sm:w-1/4"><span className="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs">已发货</span></div>
                       <div className="w-full sm:w-1/4 text-slate-500">-</div>
                       <div className="w-full sm:w-1/4 sm:text-right text-brand-600 cursor-pointer">查看</div>

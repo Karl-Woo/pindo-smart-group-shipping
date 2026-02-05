@@ -16,12 +16,8 @@ const Hero: React.FC = () => {
           
           {/* Text Content */}
           <div className="flex-1 max-w-2xl w-full text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white/90 text-sm font-medium mb-4 sm:mb-6 backdrop-blur-sm">
-              海外华人首选转运拼团平台
-            </div>
-            
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 bg-clip-text text-transparent animate-gradient break-keep">
-              就近拼团，无忧转运
+              拼团转运，就上拼岛
             </h1>
             
             <div className="text-base sm:text-lg lg:text-xl text-brand-100 mb-6 sm:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 lg:max-w-lg space-y-2 sm:space-y-3">

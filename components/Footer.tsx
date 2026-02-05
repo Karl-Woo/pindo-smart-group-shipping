@@ -7,9 +7,9 @@ const Footer: React.FC = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12">
           <div className="col-span-1 sm:col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4 text-white">
-              <img 
+              <img
                 src={`${import.meta.env.BASE_URL}assets/logo.png`}
-                alt="Pindo Logo" 
+                alt="Pindo Logo"
                 className="w-8 h-8 rounded-lg"
               />
               <span className="font-bold text-lg sm:text-xl">Pindo 拼岛</span>
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               连接海外华人与转运公司，<br />让拼团更简单，让物流更高效。
             </p>
           </div>
-          
+
           <div>
             <h4 className="text-white font-bold mb-4">产品</h4>
             <ul className="space-y-2 text-sm">
@@ -40,14 +40,22 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-bold mb-4">联系我们</h4>
             <ul className="space-y-2 text-sm">
-              <li>contact@pindo.app</li>
-              <li>商务合作：bd@pindo.app</li>
+              <li>
+                <a href="mailto:support@pindo.info" className="hover:text-white transition-colors">
+                  客户服务：support@pindo.info
+                </a>
+              </li>
+              <li>
+                <a href="mailto:business@pindo.info" className="hover:text-white transition-colors">
+                  商务合作：business@pindo.info
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-slate-800 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Pindo 拼岛 Inc. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 深圳拼岛信息科技有限公司 版权所有<br />粤ICP备2025494749号</p>
         </div>
       </div>
     </footer>
